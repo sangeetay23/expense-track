@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <div class="ab">
+        WELCOME TO OUR EXPENSE TRACKER
+    </div>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <form id="expense-form">
+            <input type="text" id="name" required placeholder="Expense Name">
+            <input id="date" type="date" name="date" required>
+            <input id="amount" type="number" name="amount" placeholder="Amount" required>
+            <select id="category" name="category" required>
+                <option value="">Select Category</option>
+                <option value="Food">Food</option>
+                <option value="Travel">Travel</option>
+                <option value="Clothes">Clothes</option>
+                <option value="Groceries">Groceries</option>
+            </select>
+            <button type="submit">Add Expense</button>
+        </form>
+
+        <ul id="expense-list"></ul>
+        <div id="total-display">Total: $0.00</div>
+        
+    </div>
+
+    <section class="container-fluid footer_section">
+        <p>&copy; 2024 Expense Tracker || Created by - SANGEETA | PRIYA | LEELA | LAXMI </p>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
